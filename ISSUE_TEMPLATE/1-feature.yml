@@ -1,0 +1,31 @@
+name: ✨ 기능
+description: 새 기능 또는 화면 작업
+title: "[Feat] "
+labels: ["type: feat"]
+body:
+  - type: dropdown
+    id: part
+    attributes:
+      label: 파트
+      options: [FE-A 들판, FE-B 흐름, BE-A 코어, BE-B 돌봄·운영, 디자인]
+    validations:
+      required: true
+  - type: dropdown
+    id: feature
+    attributes:
+      label: 기획서 기능 번호
+      options: [F1 들판 만들기·합류, F2 쓰다듬기, F3 거리 규칙, F4 한 줄 말풍선, F5 말풍선 반응, F6 멀어짐 알림, F7 털 목도리 보내기, F8 다가가기, D 데모 모드, 공통/기타]
+  - type: textarea
+    id: what
+    attributes:
+      label: 할 일
+      description: 무엇을 만드는지, 완료 기준
+      placeholder: |
+        - [ ] 
+        - [ ] 
+    validations:
+      required: true
+  - type: textarea
+    id: ref
+    attributes:
+      label: 참고 (Figma, API, 관련 이슈)

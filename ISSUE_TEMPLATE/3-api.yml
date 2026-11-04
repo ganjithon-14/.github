@@ -1,0 +1,26 @@
+name: 🔌 API 요청·변경
+description: 프론트 ↔ 백엔드 사이의 API 추가·변경 요청
+title: "[API] "
+labels: ["type: api"]
+body:
+  - type: input
+    id: endpoint
+    attributes:
+      label: 엔드포인트
+      placeholder: 예) POST /api/fields/{fieldId}/pat
+    validations:
+      required: true
+  - type: textarea
+    id: request
+    attributes:
+      label: 요청 예시
+      render: json
+  - type: textarea
+    id: response
+    attributes:
+      label: 응답 예시
+      render: json
+  - type: textarea
+    id: why
+    attributes:
+      label: 필요한 이유 / 쓰는 화면
